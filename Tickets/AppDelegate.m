@@ -21,7 +21,11 @@
     CGRect frame = UIScreen.mainScreen.bounds;
     self.window = [[UIWindow alloc] initWithFrame:frame];
     MainViewController *mvc = [MainViewController new];
-    self.window.rootViewController = mvc;
+    
+    UINavigationController *navigationController = [[UINavigationController alloc] initWithRootViewController:
+                                                    mvc];
+    
+    self.window.rootViewController = navigationController;
     [self.window makeKeyAndVisible];
     
     return YES;
