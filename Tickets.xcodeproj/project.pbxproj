@@ -16,6 +16,9 @@
 		1F2D46822026EAFB006E43C6 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D467F2026EAFB006E43C6 /* cities.json */; };
 		1F2D46832026EAFB006E43C6 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D46802026EAFB006E43C6 /* airports.json */; };
 		1F2D46842026EAFB006E43C6 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D46812026EAFB006E43C6 /* countries.json */; };
+		1FBF64FA202735170081B3AC /* CitiesMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF64F9202735170081B3AC /* CitiesMethods.m */; };
+		1FBF650020274A8F0081B3AC /* MainViewMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF64FF20274A8F0081B3AC /* MainViewMethods.m */; };
+		1FBF650420274D570081B3AC /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF650320274D570081B3AC /* MainNavigationController.m */; };
 		1FE58F00201DEAB600715162 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE58EFF201DEAB600715162 /* AppDelegate.m */; };
 		1FE58F03201DEAB600715162 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE58F02201DEAB600715162 /* MainViewController.m */; };
 		1FE58F08201DEAB600715162 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 1FE58F07201DEAB600715162 /* Assets.xcassets */; };
@@ -58,6 +61,12 @@
 		1F2D467F2026EAFB006E43C6 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cities.json; path = data/cities.json; sourceTree = SOURCE_ROOT; };
 		1F2D46802026EAFB006E43C6 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = airports.json; path = data/airports.json; sourceTree = SOURCE_ROOT; };
 		1F2D46812026EAFB006E43C6 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = countries.json; path = data/countries.json; sourceTree = SOURCE_ROOT; };
+		1FBF64F8202735170081B3AC /* CitiesMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitiesMethods.h; sourceTree = "<group>"; };
+		1FBF64F9202735170081B3AC /* CitiesMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitiesMethods.m; sourceTree = "<group>"; };
+		1FBF64FE20274A8F0081B3AC /* MainViewMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewMethods.h; sourceTree = "<group>"; };
+		1FBF64FF20274A8F0081B3AC /* MainViewMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewMethods.m; sourceTree = "<group>"; };
+		1FBF650220274D570081B3AC /* MainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
+		1FBF650320274D570081B3AC /* MainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
 		1FE58EFB201DEAB600715162 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE58EFE201DEAB600715162 /* AppDelegate.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = AppDelegate.h; sourceTree = "<group>"; };
 		1FE58EFF201DEAB600715162 /* AppDelegate.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = AppDelegate.m; sourceTree = "<group>"; };
@@ -107,6 +116,8 @@
 				1F2D466A2026DB36006E43C6 /* CitiesViewController.m */,
 				1F2D466C2026DC22006E43C6 /* CitiesViewCell.h */,
 				1F2D466D2026DC22006E43C6 /* CitiesViewCell.m */,
+				1FBF64F8202735170081B3AC /* CitiesMethods.h */,
+				1FBF64F9202735170081B3AC /* CitiesMethods.m */,
 				1F2D466F2026E2FB006E43C6 /* CitiesAPI */,
 			);
 			path = Cities;
@@ -149,6 +160,8 @@
 			children = (
 				1FE58F01201DEAB600715162 /* MainViewController.h */,
 				1FE58F02201DEAB600715162 /* MainViewController.m */,
+				1FBF64FE20274A8F0081B3AC /* MainViewMethods.h */,
+				1FBF64FF20274A8F0081B3AC /* MainViewMethods.m */,
 			);
 			path = MainController;
 			sourceTree = "<group>";
@@ -163,6 +176,15 @@
 				1FE58F0D201DEAB600715162 /* main.m */,
 			);
 			path = Support;
+			sourceTree = "<group>";
+		};
+		1FBF650120274D1B0081B3AC /* MainNavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				1FBF650220274D570081B3AC /* MainNavigationController.h */,
+				1FBF650320274D570081B3AC /* MainNavigationController.m */,
+			);
+			path = MainNavigationController;
 			sourceTree = "<group>";
 		};
 		1FE58EF2201DEAB600715162 = {
@@ -190,6 +212,7 @@
 		1FE58EFD201DEAB600715162 /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
+				1FBF650120274D1B0081B3AC /* MainNavigationController */,
 				1FBF64F52026FCA90081B3AC /* MainController */,
 				1F2D46792026E45B006E43C6 /* Services */,
 				1F16EBBC2025DA50006D5F17 /* Cities */,
@@ -353,11 +376,14 @@
 			files = (
 				1F2D46782026E3D9006E43C6 /* Airport.m in Sources */,
 				1F2D467C2026E477006E43C6 /* DataManager.m in Sources */,
+				1FBF650420274D570081B3AC /* MainNavigationController.m in Sources */,
 				1F2D46722026E327006E43C6 /* Country.m in Sources */,
 				1F2D466B2026DB36006E43C6 /* CitiesViewController.m in Sources */,
 				1F2D46752026E370006E43C6 /* City.m in Sources */,
 				1FE58F03201DEAB600715162 /* MainViewController.m in Sources */,
 				1FE58F0E201DEAB600715162 /* main.m in Sources */,
+				1FBF650020274A8F0081B3AC /* MainViewMethods.m in Sources */,
+				1FBF64FA202735170081B3AC /* CitiesMethods.m in Sources */,
 				1FE58F00201DEAB600715162 /* AppDelegate.m in Sources */,
 				1F2D466E2026DC22006E43C6 /* CitiesViewCell.m in Sources */,
 			);

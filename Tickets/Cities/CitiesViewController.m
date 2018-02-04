@@ -10,6 +10,7 @@
 #import "CitiesViewCell.h"
 #import "DataManager.h"
 #import "City.h"
+#import "CitiesMethods.h"
 
 @interface CitiesViewController ()
 
@@ -17,14 +18,21 @@
 
 @implementation CitiesViewController
 
-
-
 - (void)viewDidLoad {
     [super viewDidLoad];
     
     _data = DataManager.sharedInstance;
     _cities = [NSMutableArray arrayWithArray:_data.cities];
+    [CitiesMethods setCustomNavigationBar:self.navigationController withSegments:YES];
     
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    
+    if (self.isMovingFromParentViewController || self.isBeingDismissed) {
+        [CitiesMethods setCustomNavigationBar:self.navigationController withSegments:NO];
+    }
 }
 
 - (void)didReceiveMemoryWarning {
