@@ -8,6 +8,8 @@
 
 #import "CitiesViewController.h"
 #import "CitiesViewCell.h"
+#import "DataManager.h"
+#import "City.h"
 
 @interface CitiesViewController ()
 
@@ -15,17 +17,13 @@
 
 @implementation CitiesViewController
 
+
+
 - (void)viewDidLoad {
     [super viewDidLoad];
     
-    _cities = [NSMutableArray arrayWithObjects:
-               @"Moscow",
-               @"New York",
-               @"Rostov-on-Don",
-               @"Baku",
-               @"Sanct-Pitersburg",
-               nil
-               ];
+    _data = DataManager.sharedInstance;
+    _cities = [NSMutableArray arrayWithArray:_data.cities];
     
 }
 
@@ -40,7 +38,7 @@
 }
 
 - (NSInteger)tableView:(UITableView *)tableView numberOfRowsInSection:(NSInteger)section {
-    return _cities.count;
+    return _data.cities.count;
 }
 
 
@@ -53,52 +51,18 @@
                                       reuseIdentifier:@"CellIdentifier"];
     }
     
-    cell.leftLabel.text =  [NSString stringWithFormat:@"Left %@", _cities[indexPath.row]];
-    cell.rightLabel.text = @"Right";
+    City *city = _cities[indexPath.row];
+
+    cell.cityNameLabel.text =  [NSString stringWithFormat:@"%@", city.name];
+
+    //cell.rightLabel.text = @"Right";
     
     return cell;
 }
 
-
-/*
-// Override to support conditional editing of the table view.
-- (BOOL)tableView:(UITableView *)tableView canEditRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the specified item to be editable.
-    return YES;
-}
-*/
-
 - (void)tableView:(UITableView *)tableView commitEditingStyle:(UITableViewCellEditingStyle)editingStyle forRowAtIndexPath:(NSIndexPath *)indexPath {
-    if (editingStyle == UITableViewCellEditingStyleDelete) {
-        // Delete the row from the data source
-        [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
-    } else if (editingStyle == UITableViewCellEditingStyleInsert) {
-        // Create a new instance of the appropriate class, insert it into the array, and add a new row to the table view
-    }   
+    [_cities removeObjectAtIndex:indexPath.row];
+    [tableView deleteRowsAtIndexPaths:@[indexPath] withRowAnimation:UITableViewRowAnimationFade];
 }
-
-/*
-// Override to support rearranging the table view.
-- (void)tableView:(UITableView *)tableView moveRowAtIndexPath:(NSIndexPath *)fromIndexPath toIndexPath:(NSIndexPath *)toIndexPath {
-}
-*/
-
-/*
-// Override to support conditional rearranging of the table view.
-- (BOOL)tableView:(UITableView *)tableView canMoveRowAtIndexPath:(NSIndexPath *)indexPath {
-    // Return NO if you do not want the item to be re-orderable.
-    return YES;
-}
-*/
-
-/*
-#pragma mark - Navigation
-
-// In a storyboard-based application, you will often want to do a little preparation before navigation
-- (void)prepareForSegue:(UIStoryboardSegue *)segue sender:(id)sender {
-    // Get the new view controller using [segue destinationViewController].
-    // Pass the selected object to the new view controller.
-}
-*/
 
 @end

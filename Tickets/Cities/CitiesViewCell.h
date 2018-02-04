@@ -10,7 +10,7 @@
 
 @interface CitiesViewCell : UITableViewCell
 
-@property (nonatomic, strong) UILabel *leftLabel;
+@property (nonatomic, strong) UILabel *cityNameLabel;
 @property (nonatomic, strong) UILabel *rightLabel;
 
 @end

@@ -144,10 +144,33 @@
 			path = DataFiles;
 			sourceTree = "<group>";
 		};
+		1FBF64F52026FCA90081B3AC /* MainController */ = {
+			isa = PBXGroup;
+			children = (
+				1FE58F01201DEAB600715162 /* MainViewController.h */,
+				1FE58F02201DEAB600715162 /* MainViewController.m */,
+			);
+			path = MainController;
+			sourceTree = "<group>";
+		};
+		1FBF64F62026FCC50081B3AC /* Support */ = {
+			isa = PBXGroup;
+			children = (
+				1FE58EFE201DEAB600715162 /* AppDelegate.h */,
+				1FE58EFF201DEAB600715162 /* AppDelegate.m */,
+				1FE58F07201DEAB600715162 /* Assets.xcassets */,
+				1FE58F09201DEAB600715162 /* LaunchScreen.storyboard */,
+				1FE58F0D201DEAB600715162 /* main.m */,
+			);
+			path = Support;
+			sourceTree = "<group>";
+		};
 		1FE58EF2201DEAB600715162 = {
 			isa = PBXGroup;
 			children = (
 				1FE58EFD201DEAB600715162 /* Tickets */,
+				1F2D467E2026EACC006E43C6 /* DataFiles */,
+				1FBF64F62026FCC50081B3AC /* Support */,
 				1FE58F16201DEAB600715162 /* TicketsTests */,
 				1FE58F21201DEAB600715162 /* TicketsUITests */,
 				1FE58EFC201DEAB600715162 /* Products */,
@@ -167,17 +190,10 @@
 		1FE58EFD201DEAB600715162 /* Tickets */ = {
 			isa = PBXGroup;
 			children = (
-				1F2D467E2026EACC006E43C6 /* DataFiles */,
+				1FBF64F52026FCA90081B3AC /* MainController */,
 				1F2D46792026E45B006E43C6 /* Services */,
 				1F16EBBC2025DA50006D5F17 /* Cities */,
-				1FE58EFE201DEAB600715162 /* AppDelegate.h */,
-				1FE58EFF201DEAB600715162 /* AppDelegate.m */,
-				1FE58F01201DEAB600715162 /* MainViewController.h */,
-				1FE58F02201DEAB600715162 /* MainViewController.m */,
-				1FE58F07201DEAB600715162 /* Assets.xcassets */,
-				1FE58F09201DEAB600715162 /* LaunchScreen.storyboard */,
 				1FE58F0C201DEAB600715162 /* Info.plist */,
-				1FE58F0D201DEAB600715162 /* main.m */,
 			);
 			path = Tickets;
 			sourceTree = "<group>";

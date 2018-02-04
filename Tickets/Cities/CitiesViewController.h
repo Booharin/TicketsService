@@ -7,9 +7,11 @@
 //
 
 #import <UIKit/UIKit.h>
+#import "DataManager.h"
 
 @interface CitiesViewController : UITableViewController
 
-@property (strong, nonnull) NSMutableArray *cities;
+@property (nonatomic, strong) DataManager *data;
+@property (nonatomic, strong) NSMutableArray *cities;
 
 @end

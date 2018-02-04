@@ -14,10 +14,10 @@
     self = [super initWithStyle:style reuseIdentifier:reuseIdentifier];
     if (self)
     {
-        _leftLabel = [[UILabel alloc] initWithFrame:CGRectMake(0.0, 0.0, [UIScreen
+        _cityNameLabel = [[UILabel alloc] initWithFrame:CGRectMake(20.0, 0.0, [UIScreen
                                                                           mainScreen].bounds.size.width / 2.0, 44.0)];
-        _leftLabel.textAlignment = NSTextAlignmentCenter;
-        [self.contentView addSubview:_leftLabel];
+        _cityNameLabel.textAlignment = NSTextAlignmentLeft;
+        [self.contentView addSubview:_cityNameLabel];
         _rightLabel = [[UILabel alloc] initWithFrame: CGRectMake([UIScreen mainScreen].bounds.size.width /
                                                                  2.0, 0.0, [UIScreen mainScreen].bounds.size.width / 2.0, 44.0)];
         _rightLabel.textAlignment = NSTextAlignmentCenter;
