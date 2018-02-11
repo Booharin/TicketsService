@@ -16,6 +16,18 @@
 		1F2D46822026EAFB006E43C6 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D467F2026EAFB006E43C6 /* cities.json */; };
 		1F2D46832026EAFB006E43C6 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D46802026EAFB006E43C6 /* airports.json */; };
 		1F2D46842026EAFB006E43C6 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D46812026EAFB006E43C6 /* countries.json */; };
+		1F33869520301A390041A748 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F33869420301A390041A748 /* APIManager.m */; };
+		1F338699203021020041A748 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F338698203021020041A748 /* Ticket.m */; };
+		1F3386A0203025D10041A748 /* PlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F33869F203025D10041A748 /* PlacesTableViewController.m */; };
+		1F3386A3203026280041A748 /* PlaceTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386A2203026280041A748 /* PlaceTableViewCell.m */; };
+		1F3386A7203027170041A748 /* SearchResultsTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386A6203027170041A748 /* SearchResultsTableViewController.m */; };
+		1F3386AA2030275D0041A748 /* TicketTableViewCell.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386A92030275D0041A748 /* TicketTableViewCell.m */; };
+		1F3386AE203029640041A748 /* MainView.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386AD203029640041A748 /* MainView.m */; };
+		1F3386B220302A6B0041A748 /* UIColor+ColorPalette.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386B120302A6B0041A748 /* UIColor+ColorPalette.m */; };
+		1F3386B520302AA60041A748 /* UILabel+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386B420302AA60041A748 /* UILabel+Style.m */; };
+		1F3386B820302AD60041A748 /* UIButton+Style.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386B720302AD60041A748 /* UIButton+Style.m */; };
+		1F3386BB20302B060041A748 /* UIView+GetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386BA20302B060041A748 /* UIView+GetController.m */; };
+		1F3386BE20302B710041A748 /* NSDate+FromISOString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386BD20302B710041A748 /* NSDate+FromISOString.m */; };
 		1FBF64FA202735170081B3AC /* CitiesMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF64F9202735170081B3AC /* CitiesMethods.m */; };
 		1FBF650020274A8F0081B3AC /* MainViewMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF64FF20274A8F0081B3AC /* MainViewMethods.m */; };
 		1FBF650420274D570081B3AC /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF650320274D570081B3AC /* MainNavigationController.m */; };
@@ -26,6 +38,9 @@
 		1FE58F0E201DEAB600715162 /* main.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE58F0D201DEAB600715162 /* main.m */; };
 		1FE58F18201DEAB600715162 /* TicketsTests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE58F17201DEAB600715162 /* TicketsTests.m */; };
 		1FE58F23201DEAB600715162 /* TicketsUITests.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE58F22201DEAB600715162 /* TicketsUITests.m */; };
+		753ED415C2BA75F1C876BB8D /* libPods-TicketsTests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 9BA9D58D9C0322642BDE9267 /* libPods-TicketsTests.a */; };
+		B33231B635AFB4CB8D969AAD /* libPods-TicketsUITests.a in Frameworks */ = {isa = PBXBuildFile; fileRef = 35FD777D9D160807DAA9B7C8 /* libPods-TicketsUITests.a */; };
+		F556593ABE772022C9305177 /* libPods-Tickets.a in Frameworks */ = {isa = PBXBuildFile; fileRef = AD13614CD08AAD5C755A743F /* libPods-Tickets.a */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -46,6 +61,7 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		14EA817F9DE628D219984130 /* Pods-TicketsTests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsTests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketsTests/Pods-TicketsTests.release.xcconfig"; sourceTree = "<group>"; };
 		1F2D46692026DB36006E43C6 /* CitiesViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitiesViewController.h; sourceTree = "<group>"; };
 		1F2D466A2026DB36006E43C6 /* CitiesViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitiesViewController.m; sourceTree = "<group>"; };
 		1F2D466C2026DC22006E43C6 /* CitiesViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitiesViewCell.h; sourceTree = "<group>"; };
@@ -61,6 +77,32 @@
 		1F2D467F2026EAFB006E43C6 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cities.json; path = data/cities.json; sourceTree = SOURCE_ROOT; };
 		1F2D46802026EAFB006E43C6 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = airports.json; path = data/airports.json; sourceTree = SOURCE_ROOT; };
 		1F2D46812026EAFB006E43C6 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = countries.json; path = data/countries.json; sourceTree = SOURCE_ROOT; };
+		1F33869320301A390041A748 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
+		1F33869420301A390041A748 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
+		1F338697203021020041A748 /* Ticket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
+		1F338698203021020041A748 /* Ticket.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = Ticket.m; sourceTree = "<group>"; };
+		1F33869B2030236A0041A748 /* SearchRequest.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = SearchRequest.h; sourceTree = "<group>"; };
+		1F33869C203023FE0041A748 /* DataSourceTypeEnum.h */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.h; path = DataSourceTypeEnum.h; sourceTree = "<group>"; };
+		1F33869E203025D10041A748 /* PlacesTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlacesTableViewController.h; sourceTree = "<group>"; };
+		1F33869F203025D10041A748 /* PlacesTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlacesTableViewController.m; sourceTree = "<group>"; };
+		1F3386A1203026280041A748 /* PlaceTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = PlaceTableViewCell.h; sourceTree = "<group>"; };
+		1F3386A2203026280041A748 /* PlaceTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = PlaceTableViewCell.m; sourceTree = "<group>"; };
+		1F3386A5203027170041A748 /* SearchResultsTableViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = SearchResultsTableViewController.h; sourceTree = "<group>"; };
+		1F3386A6203027170041A748 /* SearchResultsTableViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = SearchResultsTableViewController.m; sourceTree = "<group>"; };
+		1F3386A82030275D0041A748 /* TicketTableViewCell.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = TicketTableViewCell.h; sourceTree = "<group>"; };
+		1F3386A92030275D0041A748 /* TicketTableViewCell.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketTableViewCell.m; sourceTree = "<group>"; };
+		1F3386AC203029640041A748 /* MainView.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainView.h; sourceTree = "<group>"; };
+		1F3386AD203029640041A748 /* MainView.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainView.m; sourceTree = "<group>"; };
+		1F3386B020302A6B0041A748 /* UIColor+ColorPalette.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIColor+ColorPalette.h"; sourceTree = "<group>"; };
+		1F3386B120302A6B0041A748 /* UIColor+ColorPalette.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIColor+ColorPalette.m"; sourceTree = "<group>"; };
+		1F3386B320302AA60041A748 /* UILabel+Style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UILabel+Style.h"; sourceTree = "<group>"; };
+		1F3386B420302AA60041A748 /* UILabel+Style.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UILabel+Style.m"; sourceTree = "<group>"; };
+		1F3386B620302AD60041A748 /* UIButton+Style.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIButton+Style.h"; sourceTree = "<group>"; };
+		1F3386B720302AD60041A748 /* UIButton+Style.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIButton+Style.m"; sourceTree = "<group>"; };
+		1F3386B920302B060041A748 /* UIView+GetController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "UIView+GetController.h"; sourceTree = "<group>"; };
+		1F3386BA20302B060041A748 /* UIView+GetController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "UIView+GetController.m"; sourceTree = "<group>"; };
+		1F3386BC20302B710041A748 /* NSDate+FromISOString.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = "NSDate+FromISOString.h"; sourceTree = "<group>"; };
+		1F3386BD20302B710041A748 /* NSDate+FromISOString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FromISOString.m"; sourceTree = "<group>"; };
 		1FBF64F8202735170081B3AC /* CitiesMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitiesMethods.h; sourceTree = "<group>"; };
 		1FBF64F9202735170081B3AC /* CitiesMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitiesMethods.m; sourceTree = "<group>"; };
 		1FBF64FE20274A8F0081B3AC /* MainViewMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewMethods.h; sourceTree = "<group>"; };
@@ -82,6 +124,14 @@
 		1FE58F1E201DEAB600715162 /* TicketsUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = TicketsUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		1FE58F22201DEAB600715162 /* TicketsUITests.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = TicketsUITests.m; sourceTree = "<group>"; };
 		1FE58F24201DEAB600715162 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		30C0D3212C33663F109CC77D /* Pods-Tickets.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.debug.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.debug.xcconfig"; sourceTree = "<group>"; };
+		35FD777D9D160807DAA9B7C8 /* libPods-TicketsUITests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicketsUITests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		728883CB4BC4B66456A5B56D /* Pods-TicketsTests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsTests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketsTests/Pods-TicketsTests.debug.xcconfig"; sourceTree = "<group>"; };
+		8855E32F6EF592FBBA6B7B27 /* Pods-TicketsUITests.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsUITests.debug.xcconfig"; path = "Pods/Target Support Files/Pods-TicketsUITests/Pods-TicketsUITests.debug.xcconfig"; sourceTree = "<group>"; };
+		9BA9D58D9C0322642BDE9267 /* libPods-TicketsTests.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-TicketsTests.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		AD13614CD08AAD5C755A743F /* libPods-Tickets.a */ = {isa = PBXFileReference; explicitFileType = archive.ar; includeInIndex = 0; path = "libPods-Tickets.a"; sourceTree = BUILT_PRODUCTS_DIR; };
+		B06C65ED562BC49AAA5E2868 /* Pods-TicketsUITests.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TicketsUITests.release.xcconfig"; path = "Pods/Target Support Files/Pods-TicketsUITests/Pods-TicketsUITests.release.xcconfig"; sourceTree = "<group>"; };
+		F2F1755C94E32ECB1046B942 /* Pods-Tickets.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-Tickets.release.xcconfig"; path = "Pods/Target Support Files/Pods-Tickets/Pods-Tickets.release.xcconfig"; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -89,6 +139,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				F556593ABE772022C9305177 /* libPods-Tickets.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -96,6 +147,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				753ED415C2BA75F1C876BB8D /* libPods-TicketsTests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -103,6 +155,7 @@
 			isa = PBXFrameworksBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				B33231B635AFB4CB8D969AAD /* libPods-TicketsUITests.a in Frameworks */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -141,6 +194,8 @@
 			children = (
 				1F2D467A2026E477006E43C6 /* DataManager.h */,
 				1F2D467B2026E477006E43C6 /* DataManager.m */,
+				1F33869320301A390041A748 /* APIManager.h */,
+				1F33869420301A390041A748 /* APIManager.m */,
 			);
 			path = Services;
 			sourceTree = "<group>";
@@ -153,6 +208,65 @@
 				1F2D46812026EAFB006E43C6 /* countries.json */,
 			);
 			path = DataFiles;
+			sourceTree = "<group>";
+		};
+		1F338696203020C60041A748 /* TicketsSearch */ = {
+			isa = PBXGroup;
+			children = (
+				1F338697203021020041A748 /* Ticket.h */,
+				1F338698203021020041A748 /* Ticket.m */,
+				1F33869B2030236A0041A748 /* SearchRequest.h */,
+				1F33869C203023FE0041A748 /* DataSourceTypeEnum.h */,
+			);
+			path = TicketsSearch;
+			sourceTree = "<group>";
+		};
+		1F33869D203025850041A748 /* PlacesSelectionView */ = {
+			isa = PBXGroup;
+			children = (
+				1F33869E203025D10041A748 /* PlacesTableViewController.h */,
+				1F33869F203025D10041A748 /* PlacesTableViewController.m */,
+				1F3386A1203026280041A748 /* PlaceTableViewCell.h */,
+				1F3386A2203026280041A748 /* PlaceTableViewCell.m */,
+			);
+			path = PlacesSelectionView;
+			sourceTree = "<group>";
+		};
+		1F3386A4203026C50041A748 /* SearchResultsView */ = {
+			isa = PBXGroup;
+			children = (
+				1F3386A5203027170041A748 /* SearchResultsTableViewController.h */,
+				1F3386A6203027170041A748 /* SearchResultsTableViewController.m */,
+				1F3386A82030275D0041A748 /* TicketTableViewCell.h */,
+				1F3386A92030275D0041A748 /* TicketTableViewCell.m */,
+			);
+			path = SearchResultsView;
+			sourceTree = "<group>";
+		};
+		1F3386AB203029450041A748 /* MainView */ = {
+			isa = PBXGroup;
+			children = (
+				1F3386AC203029640041A748 /* MainView.h */,
+				1F3386AD203029640041A748 /* MainView.m */,
+			);
+			path = MainView;
+			sourceTree = "<group>";
+		};
+		1F3386AF203029F20041A748 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				1F3386B020302A6B0041A748 /* UIColor+ColorPalette.h */,
+				1F3386B120302A6B0041A748 /* UIColor+ColorPalette.m */,
+				1F3386B320302AA60041A748 /* UILabel+Style.h */,
+				1F3386B420302AA60041A748 /* UILabel+Style.m */,
+				1F3386B620302AD60041A748 /* UIButton+Style.h */,
+				1F3386B720302AD60041A748 /* UIButton+Style.m */,
+				1F3386B920302B060041A748 /* UIView+GetController.h */,
+				1F3386BA20302B060041A748 /* UIView+GetController.m */,
+				1F3386BC20302B710041A748 /* NSDate+FromISOString.h */,
+				1F3386BD20302B710041A748 /* NSDate+FromISOString.m */,
+			);
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		1FBF64F52026FCA90081B3AC /* MainController */ = {
@@ -196,6 +310,8 @@
 				1FE58F16201DEAB600715162 /* TicketsTests */,
 				1FE58F21201DEAB600715162 /* TicketsUITests */,
 				1FE58EFC201DEAB600715162 /* Products */,
+				4F8C81426EE67063134E58F7 /* Pods */,
+				E5E7E68685506B7A5CD80266 /* Frameworks */,
 			);
 			sourceTree = "<group>";
 		};
@@ -215,7 +331,12 @@
 				1FBF650120274D1B0081B3AC /* MainNavigationController */,
 				1FBF64F52026FCA90081B3AC /* MainController */,
 				1F2D46792026E45B006E43C6 /* Services */,
+				1F338696203020C60041A748 /* TicketsSearch */,
+				1F33869D203025850041A748 /* PlacesSelectionView */,
+				1F3386A4203026C50041A748 /* SearchResultsView */,
 				1F16EBBC2025DA50006D5F17 /* Cities */,
+				1F3386AB203029450041A748 /* MainView */,
+				1F3386AF203029F20041A748 /* Categories */,
 				1FE58F0C201DEAB600715162 /* Info.plist */,
 			);
 			path = Tickets;
@@ -239,6 +360,29 @@
 			path = TicketsUITests;
 			sourceTree = "<group>";
 		};
+		4F8C81426EE67063134E58F7 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				30C0D3212C33663F109CC77D /* Pods-Tickets.debug.xcconfig */,
+				F2F1755C94E32ECB1046B942 /* Pods-Tickets.release.xcconfig */,
+				728883CB4BC4B66456A5B56D /* Pods-TicketsTests.debug.xcconfig */,
+				14EA817F9DE628D219984130 /* Pods-TicketsTests.release.xcconfig */,
+				8855E32F6EF592FBBA6B7B27 /* Pods-TicketsUITests.debug.xcconfig */,
+				B06C65ED562BC49AAA5E2868 /* Pods-TicketsUITests.release.xcconfig */,
+			);
+			name = Pods;
+			sourceTree = "<group>";
+		};
+		E5E7E68685506B7A5CD80266 /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				AD13614CD08AAD5C755A743F /* libPods-Tickets.a */,
+				9BA9D58D9C0322642BDE9267 /* libPods-TicketsTests.a */,
+				35FD777D9D160807DAA9B7C8 /* libPods-TicketsUITests.a */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -246,9 +390,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FE58F27201DEAB600715162 /* Build configuration list for PBXNativeTarget "Tickets" */;
 			buildPhases = (
+				E2C479C3A07293380035F54B /* [CP] Check Pods Manifest.lock */,
 				1FE58EF7201DEAB600715162 /* Sources */,
 				1FE58EF8201DEAB600715162 /* Frameworks */,
 				1FE58EF9201DEAB600715162 /* Resources */,
+				31AC0873157FA1CD05BD94D4 /* [CP] Embed Pods Frameworks */,
+				43E3E5C692D1689A8DB30FA0 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -263,9 +410,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FE58F2A201DEAB600715162 /* Build configuration list for PBXNativeTarget "TicketsTests" */;
 			buildPhases = (
+				FDDF1AF27876BCFABBDC3C9C /* [CP] Check Pods Manifest.lock */,
 				1FE58F0F201DEAB600715162 /* Sources */,
 				1FE58F10201DEAB600715162 /* Frameworks */,
 				1FE58F11201DEAB600715162 /* Resources */,
+				D269DFF1BB6EBD336A8BEFA6 /* [CP] Embed Pods Frameworks */,
+				E169CA7C5B8CD2D181C927A7 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -281,9 +431,12 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 1FE58F2D201DEAB600715162 /* Build configuration list for PBXNativeTarget "TicketsUITests" */;
 			buildPhases = (
+				FACD0151E2BDD74F30FCB802 /* [CP] Check Pods Manifest.lock */,
 				1FE58F1A201DEAB600715162 /* Sources */,
 				1FE58F1B201DEAB600715162 /* Frameworks */,
 				1FE58F1C201DEAB600715162 /* Resources */,
+				C20DDD7595271C6F4CFF2870 /* [CP] Embed Pods Frameworks */,
+				42FB0353F8AEAFBD61559193 /* [CP] Copy Pods Resources */,
 			);
 			buildRules = (
 			);
@@ -369,22 +522,181 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		31AC0873157FA1CD05BD94D4 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tickets/Pods-Tickets-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		42FB0353F8AEAFBD61559193 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicketsUITests/Pods-TicketsUITests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		43E3E5C692D1689A8DB30FA0 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-Tickets/Pods-Tickets-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		C20DDD7595271C6F4CFF2870 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicketsUITests/Pods-TicketsUITests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		D269DFF1BB6EBD336A8BEFA6 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicketsTests/Pods-TicketsTests-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E169CA7C5B8CD2D181C927A7 /* [CP] Copy Pods Resources */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+			);
+			name = "[CP] Copy Pods Resources";
+			outputPaths = (
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${SRCROOT}/Pods/Target Support Files/Pods-TicketsTests/Pods-TicketsTests-resources.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+		E2C479C3A07293380035F54B /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-Tickets-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FACD0151E2BDD74F30FCB802 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicketsUITests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		FDDF1AF27876BCFABBDC3C9C /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TicketsTests-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		1FE58EF7201DEAB600715162 /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				1F3386AE203029640041A748 /* MainView.m in Sources */,
+				1F3386B820302AD60041A748 /* UIButton+Style.m in Sources */,
 				1F2D46782026E3D9006E43C6 /* Airport.m in Sources */,
+				1F3386A7203027170041A748 /* SearchResultsTableViewController.m in Sources */,
+				1F3386A0203025D10041A748 /* PlacesTableViewController.m in Sources */,
 				1F2D467C2026E477006E43C6 /* DataManager.m in Sources */,
 				1FBF650420274D570081B3AC /* MainNavigationController.m in Sources */,
 				1F2D46722026E327006E43C6 /* Country.m in Sources */,
 				1F2D466B2026DB36006E43C6 /* CitiesViewController.m in Sources */,
 				1F2D46752026E370006E43C6 /* City.m in Sources */,
+				1F3386A3203026280041A748 /* PlaceTableViewCell.m in Sources */,
 				1FE58F03201DEAB600715162 /* MainViewController.m in Sources */,
+				1F3386B220302A6B0041A748 /* UIColor+ColorPalette.m in Sources */,
+				1F338699203021020041A748 /* Ticket.m in Sources */,
 				1FE58F0E201DEAB600715162 /* main.m in Sources */,
 				1FBF650020274A8F0081B3AC /* MainViewMethods.m in Sources */,
+				1F33869520301A390041A748 /* APIManager.m in Sources */,
+				1F3386BE20302B710041A748 /* NSDate+FromISOString.m in Sources */,
 				1FBF64FA202735170081B3AC /* CitiesMethods.m in Sources */,
+				1F3386BB20302B060041A748 /* UIView+GetController.m in Sources */,
+				1F3386AA2030275D0041A748 /* TicketTableViewCell.m in Sources */,
 				1FE58F00201DEAB600715162 /* AppDelegate.m in Sources */,
+				1F3386B520302AA60041A748 /* UILabel+Style.m in Sources */,
 				1F2D466E2026DC22006E43C6 /* CitiesViewCell.m in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -538,6 +850,7 @@
 		};
 		1FE58F28201DEAB600715162 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 30C0D3212C33663F109CC77D /* Pods-Tickets.debug.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -552,6 +865,7 @@
 		};
 		1FE58F29201DEAB600715162 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = F2F1755C94E32ECB1046B942 /* Pods-Tickets.release.xcconfig */;
 			buildSettings = {
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				CODE_SIGN_STYLE = Automatic;
@@ -566,6 +880,7 @@
 		};
 		1FE58F2B201DEAB600715162 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 728883CB4BC4B66456A5B56D /* Pods-TicketsTests.debug.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -581,6 +896,7 @@
 		};
 		1FE58F2C201DEAB600715162 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 14EA817F9DE628D219984130 /* Pods-TicketsTests.release.xcconfig */;
 			buildSettings = {
 				BUNDLE_LOADER = "$(TEST_HOST)";
 				CODE_SIGN_STYLE = Automatic;
@@ -596,6 +912,7 @@
 		};
 		1FE58F2E201DEAB600715162 /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 8855E32F6EF592FBBA6B7B27 /* Pods-TicketsUITests.debug.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62UUS6482X;
@@ -610,6 +927,7 @@
 		};
 		1FE58F2F201DEAB600715162 /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = B06C65ED562BC49AAA5E2868 /* Pods-TicketsUITests.release.xcconfig */;
 			buildSettings = {
 				CODE_SIGN_STYLE = Automatic;
 				DEVELOPMENT_TEAM = 62UUS6482X;

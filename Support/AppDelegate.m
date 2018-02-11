@@ -7,7 +7,6 @@
 //
 
 #import "AppDelegate.h"
-#import "MainViewController.h"
 #import "MainNavigationController.h"
 
 @interface AppDelegate ()
@@ -19,14 +18,8 @@
 
 - (BOOL)application:(UIApplication *)application didFinishLaunchingWithOptions:(NSDictionary *)launchOptions {
    
-    CGRect frame = UIScreen.mainScreen.bounds;
-    self.window = [[UIWindow alloc] initWithFrame:frame];
-    MainViewController *mvc = [MainViewController new];
-    
-    MainNavigationController *navigationController = [[MainNavigationController alloc] initWithRootViewController:mvc];
-    
-    self.window.rootViewController = navigationController;
-    [self.window makeKeyAndVisible];
+    NSLog(@"%@ %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd));
+    [self performViewInitialization];
     
     return YES;
 }
@@ -58,5 +51,15 @@
     // Called when the application is about to terminate. Save data if appropriate. See also applicationDidEnterBackground:.
 }
 
+# pragma mark - View initialization sequence
+
+- (void)performViewInitialization {
+    NSLog(@"%@ %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd));
+    CGRect frame = [UIScreen mainScreen].bounds;
+    self.window = [[UIWindow alloc] initWithFrame:frame];
+    MainNavigationController *navigationController = [[MainNavigationController alloc] init];
+    self.window.rootViewController = navigationController;
+    [self.window makeKeyAndVisible];
+}
 
 @end
