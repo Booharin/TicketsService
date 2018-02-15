@@ -14,6 +14,7 @@
 #import "PlacesTableViewController.h"
 #import "SearchRequest.h"
 #import "APIManager.h"
+#import "MapViewController.h"
 
 
 @interface MainViewController () <PlaceViewControllerDelegate>
@@ -29,7 +30,8 @@
     //    NSLog(@"%@ %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd));
     [super viewDidLoad];
     [DataManager.sharedInstance loadData];
-    [self performViewInitialization];
+    
+    
 }
 
 - (void)viewWillAppear:(BOOL)animated {
@@ -41,6 +43,12 @@
     // 'Bar button remains highlighted' bug workaround:
     self.navigationController.navigationBar.tintAdjustmentMode = UIViewTintAdjustmentModeNormal;
     self.navigationController.navigationBar.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
+    [self performViewInitialization];
+}
+
+- (void)viewWillDisappear:(BOOL)animated {
+    [super viewWillDisappear:animated];
+    [self.navigationItem setTitle:nil];
 }
 
 - (void)dealloc {
@@ -75,8 +83,8 @@
 #pragma mark - Navigation
 
 - (void)presentSearchResultsController {
-    [self.navigationItem setTitle:nil];
     [APIManager.sharedInstance ticketsWithRequest:_searchRequest withCompletion:^(NSArray *tickets) {
+        
         if (tickets.count > 0) {
             SearchResultsTableViewController *controller =
             [[SearchResultsTableViewController alloc] initWithTickets:tickets];
@@ -93,8 +101,6 @@
             [self presentViewController:alertController animated:YES completion:nil];
         }
     }];
-    
-    
 }
 
 - (void)presentOriginSelectionView {
@@ -114,6 +120,14 @@
                                              toReturnOrigin:false];
     controller.delegate = self;
     [self.navigationController pushViewController:controller animated:YES];
+}
+
+- (void)presentMapView {
+    [self.navigationItem setTitle:nil];
+    [self.navigationItem setRightBarButtonItem:nil];
+    MapViewController *controller = [MapViewController alloc];
+    [self.navigationController pushViewController:controller animated:YES];
+    
 }
 
 #pragma mark - PlaceViewControllerDelegate
@@ -144,16 +158,3 @@
 }
 
 @end
-
-
-
-
-
-
-
-
-
-
-
-
-

@@ -11,4 +11,5 @@
 @interface SearchResultsTableViewController : UITableViewController
 
 - (instancetype)initWithTickets:(NSArray *)tickets;
+
 @end

@@ -28,11 +28,7 @@
     static dispatch_once_t dispatchOperation;
     dispatch_once(&dispatchOperation, ^{
         shared = [[APIManager alloc] init];
-        
-        NSString *path = [NSBundle.mainBundle pathForResource:@"apikey"
-                                                       ofType:@"plist"];
-        NSDictionary *apiPlist = [NSDictionary dictionaryWithContentsOfFile:path];
-        shared.apikey = apiPlist[@"apiToken"];
+        shared.apikey = API_TOKEN;
     });
     return shared;
 }
@@ -63,7 +59,9 @@
 
 - (void)loadWithURLString:(NSString *)urlString completion:(void (^)(id _Nullable result))completion {
     NSURL *url = [[NSURL alloc] initWithString:urlString];
-    UIApplication.sharedApplication.networkActivityIndicatorVisible = YES;
+    dispatch_async(dispatch_get_main_queue(), ^{
+        UIApplication.sharedApplication.networkActivityIndicatorVisible = YES;
+    });
     [[NSURLSession.sharedSession
       dataTaskWithURL:url
       completionHandler:^(
@@ -85,21 +83,20 @@
     NSLog(@"Requset URL String is: %@", urlString);
     
     [self loadWithURLString:urlString completion:^(id result) {
-        
+        NSLog(@"%@", result);
         NSDictionary *json = [[(NSDictionary *) result valueForKey:@"data"] valueForKey:request.destination];
-        if (!json) {
-            NSLog(@"JSON object not found");
-            return;
-        }
         
         NSMutableArray *array = [NSMutableArray new];
-        for (NSString *key in json) {
-            NSDictionary *value = [json valueForKey:key];
-            Ticket *ticket = [[Ticket alloc] initWithDictionary:value];
-            ticket.from = request.origin;
-            ticket.to = request.destination;
-            [array addObject:ticket];
-        }
+        
+        if ([json isKindOfClass:[NSDictionary class]]) {
+            for (NSString *key in json) {
+                NSDictionary *value = [json valueForKey:key];
+                Ticket *ticket = [[Ticket alloc] initWithDictionary:value];
+                ticket.from = request.origin;
+                ticket.to = request.destination;
+                [array addObject:ticket];
+            }
+        } else { NSLog(@"Program stops because this one: %@", json); }
         
         dispatch_async(dispatch_get_main_queue(), ^{
             completion(array);
@@ -115,7 +112,7 @@
     
     NSMutableArray *queryItems = [NSMutableArray new];
     
-    NSURLQueryItem *token = [[NSURLQueryItem alloc] initWithName:@"token" value:_apikey];
+    NSURLQueryItem *token = [[NSURLQueryItem alloc] initWithName:@"token" value: API_TOKEN];
     [queryItems addObject:token];
     
     NSURLQueryItem *origin = [[NSURLQueryItem alloc] initWithName:@"origin" value:request.origin];

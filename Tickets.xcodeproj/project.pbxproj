@@ -16,6 +16,7 @@
 		1F2D46822026EAFB006E43C6 /* cities.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D467F2026EAFB006E43C6 /* cities.json */; };
 		1F2D46832026EAFB006E43C6 /* airports.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D46802026EAFB006E43C6 /* airports.json */; };
 		1F2D46842026EAFB006E43C6 /* countries.json in Resources */ = {isa = PBXBuildFile; fileRef = 1F2D46812026EAFB006E43C6 /* countries.json */; };
+		1F3199E12035CBF300299A93 /* MapViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3199E02035CBF300299A93 /* MapViewController.m */; };
 		1F33869520301A390041A748 /* APIManager.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F33869420301A390041A748 /* APIManager.m */; };
 		1F338699203021020041A748 /* Ticket.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F338698203021020041A748 /* Ticket.m */; };
 		1F3386A0203025D10041A748 /* PlacesTableViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F33869F203025D10041A748 /* PlacesTableViewController.m */; };
@@ -29,7 +30,6 @@
 		1F3386BB20302B060041A748 /* UIView+GetController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386BA20302B060041A748 /* UIView+GetController.m */; };
 		1F3386BE20302B710041A748 /* NSDate+FromISOString.m in Sources */ = {isa = PBXBuildFile; fileRef = 1F3386BD20302B710041A748 /* NSDate+FromISOString.m */; };
 		1FBF64FA202735170081B3AC /* CitiesMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF64F9202735170081B3AC /* CitiesMethods.m */; };
-		1FBF650020274A8F0081B3AC /* MainViewMethods.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF64FF20274A8F0081B3AC /* MainViewMethods.m */; };
 		1FBF650420274D570081B3AC /* MainNavigationController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FBF650320274D570081B3AC /* MainNavigationController.m */; };
 		1FE58F00201DEAB600715162 /* AppDelegate.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE58EFF201DEAB600715162 /* AppDelegate.m */; };
 		1FE58F03201DEAB600715162 /* MainViewController.m in Sources */ = {isa = PBXBuildFile; fileRef = 1FE58F02201DEAB600715162 /* MainViewController.m */; };
@@ -77,6 +77,8 @@
 		1F2D467F2026EAFB006E43C6 /* cities.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = cities.json; path = data/cities.json; sourceTree = SOURCE_ROOT; };
 		1F2D46802026EAFB006E43C6 /* airports.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = airports.json; path = data/airports.json; sourceTree = SOURCE_ROOT; };
 		1F2D46812026EAFB006E43C6 /* countries.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; name = countries.json; path = data/countries.json; sourceTree = SOURCE_ROOT; };
+		1F3199DF2035CBF300299A93 /* MapViewController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MapViewController.h; sourceTree = "<group>"; };
+		1F3199E02035CBF300299A93 /* MapViewController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MapViewController.m; sourceTree = "<group>"; };
 		1F33869320301A390041A748 /* APIManager.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = APIManager.h; sourceTree = "<group>"; };
 		1F33869420301A390041A748 /* APIManager.m */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.c.objc; path = APIManager.m; sourceTree = "<group>"; };
 		1F338697203021020041A748 /* Ticket.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = Ticket.h; sourceTree = "<group>"; };
@@ -105,8 +107,6 @@
 		1F3386BD20302B710041A748 /* NSDate+FromISOString.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = "NSDate+FromISOString.m"; sourceTree = "<group>"; };
 		1FBF64F8202735170081B3AC /* CitiesMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = CitiesMethods.h; sourceTree = "<group>"; };
 		1FBF64F9202735170081B3AC /* CitiesMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = CitiesMethods.m; sourceTree = "<group>"; };
-		1FBF64FE20274A8F0081B3AC /* MainViewMethods.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainViewMethods.h; sourceTree = "<group>"; };
-		1FBF64FF20274A8F0081B3AC /* MainViewMethods.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainViewMethods.m; sourceTree = "<group>"; };
 		1FBF650220274D570081B3AC /* MainNavigationController.h */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.h; path = MainNavigationController.h; sourceTree = "<group>"; };
 		1FBF650320274D570081B3AC /* MainNavigationController.m */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.c.objc; path = MainNavigationController.m; sourceTree = "<group>"; };
 		1FE58EFB201DEAB600715162 /* Tickets.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = Tickets.app; sourceTree = BUILT_PRODUCTS_DIR; };
@@ -210,6 +210,15 @@
 			path = DataFiles;
 			sourceTree = "<group>";
 		};
+		1F3199DE2035CBAC00299A93 /* MapView */ = {
+			isa = PBXGroup;
+			children = (
+				1F3199DF2035CBF300299A93 /* MapViewController.h */,
+				1F3199E02035CBF300299A93 /* MapViewController.m */,
+			);
+			path = MapView;
+			sourceTree = "<group>";
+		};
 		1F338696203020C60041A748 /* TicketsSearch */ = {
 			isa = PBXGroup;
 			children = (
@@ -274,8 +283,6 @@
 			children = (
 				1FE58F01201DEAB600715162 /* MainViewController.h */,
 				1FE58F02201DEAB600715162 /* MainViewController.m */,
-				1FBF64FE20274A8F0081B3AC /* MainViewMethods.h */,
-				1FBF64FF20274A8F0081B3AC /* MainViewMethods.m */,
 			);
 			path = MainController;
 			sourceTree = "<group>";
@@ -334,6 +341,7 @@
 				1F338696203020C60041A748 /* TicketsSearch */,
 				1F33869D203025850041A748 /* PlacesSelectionView */,
 				1F3386A4203026C50041A748 /* SearchResultsView */,
+				1F3199DE2035CBAC00299A93 /* MapView */,
 				1F16EBBC2025DA50006D5F17 /* Cities */,
 				1F3386AB203029450041A748 /* MainView */,
 				1F3386AF203029F20041A748 /* Categories */,
@@ -677,6 +685,7 @@
 				1F3386AE203029640041A748 /* MainView.m in Sources */,
 				1F3386B820302AD60041A748 /* UIButton+Style.m in Sources */,
 				1F2D46782026E3D9006E43C6 /* Airport.m in Sources */,
+				1F3199E12035CBF300299A93 /* MapViewController.m in Sources */,
 				1F3386A7203027170041A748 /* SearchResultsTableViewController.m in Sources */,
 				1F3386A0203025D10041A748 /* PlacesTableViewController.m in Sources */,
 				1F2D467C2026E477006E43C6 /* DataManager.m in Sources */,
@@ -689,7 +698,6 @@
 				1F3386B220302A6B0041A748 /* UIColor+ColorPalette.m in Sources */,
 				1F338699203021020041A748 /* Ticket.m in Sources */,
 				1FE58F0E201DEAB600715162 /* main.m in Sources */,
-				1FBF650020274A8F0081B3AC /* MainViewMethods.m in Sources */,
 				1F33869520301A390041A748 /* APIManager.m in Sources */,
 				1F3386BE20302B710041A748 /* NSDate+FromISOString.m in Sources */,
 				1FBF64FA202735170081B3AC /* CitiesMethods.m in Sources */,
