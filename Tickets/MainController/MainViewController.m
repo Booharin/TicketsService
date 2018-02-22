@@ -27,15 +27,15 @@
 #pragma mark Life cycle
 
 - (void)viewDidLoad {
-    //    NSLog(@"%@ %@", NSStringFromClass(self.class), NSStringFromSelector(_cmd));
     [super viewDidLoad];
     [DataManager.sharedInstance loadData];
-    
+    [self performViewInitialization];
     
 }
 
 - (void)viewWillAppear:(BOOL)animated {
     [super viewWillAppear:animated];
+    
     [self.navigationItem setTitle:@"Поиск билетов"];
     [[NSNotificationCenter defaultCenter] addObserver:self selector:@selector(dataLoadingCompletion)
                                                  name:kDataManagerLoadDataDidComplete object:nil];
@@ -43,7 +43,8 @@
     // 'Bar button remains highlighted' bug workaround:
     self.navigationController.navigationBar.tintAdjustmentMode = UIViewTintAdjustmentModeNormal;
     self.navigationController.navigationBar.tintAdjustmentMode = UIViewTintAdjustmentModeAutomatic;
-    [self performViewInitialization];
+    self.navigationController.navigationBar.tintColor = UIColor.whiteColor;
+    
 }
 
 - (void)viewWillDisappear:(BOOL)animated {
@@ -62,10 +63,11 @@
     self.view = [[MainView alloc] initWithFrame:self.view.frame];
     
     UIBarButtonItem *rightButtonItem = [[UIBarButtonItem alloc]
-                                        initWithTitle:@"Найти"
+                                        initWithImage:[UIImage imageNamed:@"search_button"]
                                         style:UIBarButtonItemStylePlain
                                         target:self
                                         action:@selector(presentSearchResultsController)];
+    rightButtonItem.tintColor = UIColor.whiteColor;
     [self.navigationItem setRightBarButtonItem:rightButtonItem animated:NO];
     
 }

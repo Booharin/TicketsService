@@ -11,11 +11,11 @@
 @implementation UIColor (ColorPalette)
 
 + (UIColor *)navigationBarFW {
-    return [UIColor colorWithRed:0.77 green:0.91 blue:0.98 alpha:1.0];
+    return [UIColor colorWithRed:167.0 / 255.0 green:143.0 / 255.0 blue:255.0 alpha:0.15];
 }
 
 + (UIColor *)buttonBackgorundFW {
-    return [UIColor colorWithRed:0.0 green:122.0 / 255.0 blue:1.0 alpha:0.55];
+    return [UIColor colorWithRed:128.0 / 255.0 green:110.0 / 255.0 blue:195.0 / 255.0 alpha:0.75];
 }
 
 + (UIColor *)buttonTintFW {
@@ -23,7 +23,7 @@
 }
 
 + (UIColor *)cellShadowColorFW {
-    return [UIColor colorWithRed:0.0/255.0 green:122.0/255.0 blue:1.0 alpha:0.55];
+    return [UIColor colorWithRed:167.0 / 255.0 green:143.0 / 255.0 blue:255.0 alpha:0.85];
 }
 
 

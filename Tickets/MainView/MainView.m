@@ -81,6 +81,7 @@
                                                 halfSizeElementWidth / 2,
                                                 elementHeight);
     UIStepper *adultCountStepper = [[UIStepper alloc] initWithFrame:adultsCountStepperFrame];
+    adultCountStepper.tintColor = [UIColor colorWithRed:128.0 / 255.0 green:110.0 / 255.0 blue:195.0 / 255.0 alpha:1.0];
     [self addSubview:adultCountStepper];
     
 #pragma mark childrenCountLabel
@@ -107,6 +108,7 @@
                                                   halfSizeElementWidth / 2,
                                                   elementHeight);
     UIStepper *childrenCountStepper = [[UIStepper alloc] initWithFrame:childrenCountStepperFrame];
+    childrenCountStepper.tintColor = [UIColor colorWithRed:128.0 / 255.0 green:110.0 / 255.0 blue:195.0 / 255.0 alpha:1.0];
     [self addSubview:childrenCountStepper];
     
 #pragma mark TRANSFER COUNT
@@ -126,6 +128,7 @@
                                                   elementWidth * 1 / 3,
                                                   elementHeight);
     UIStepper *tansfersCountStepper = [[UIStepper alloc] initWithFrame:tansfersCountStepperFrame];
+    tansfersCountStepper.tintColor = [UIColor colorWithRed:128.0 / 255.0 green:110.0 / 255.0 blue:195.0 / 255.0 alpha:1.0];
     [self addSubview:tansfersCountStepper];
     
     return self;
