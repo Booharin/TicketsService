@@ -3,5 +3,5 @@ Application for finding cheap tickets. It builded with Alamofire for REST reques
 
 ScreenShots
 
-![alt text](https://github.com/Booharin/TicketsService/blob/master/img/IMG_9984.PNG)
-![alt text](https://github.com/Booharin/TicketsService/blob/master/img/IMG_9985.PNG)
+![alt text](https://github.com/Booharin/TicketsService/blob/master/img/1211486.png)
+![alt text](https://github.com/Booharin/TicketsService/blob/master/img/1211488.png)
